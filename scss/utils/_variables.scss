@@ -1,0 +1,35 @@
+/* Color */
+@use "sass:color";
+$primary-color: #9356DC;
+$primary-color-alt: #f5edff;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$white-color: #FFFFFF;
+$white-color-alt: #f6f6f6;
+$grey-color: #eaeaea;
+$green-color: #008766;
+$green-color-light: #99e2d0;
+$text-color: #353535;
+$text-color-alt: #7e7e7e;
+$footer-background-color: #353535;
+$gradient-color: linear-gradient(-5deg, color.scale($primary-color) 0%, color.scale($secondary-color) 100%);
+$gradient-color-hover: linear-gradient(-5deg, color.scale($primary-color, $alpha: -20%) 0%, color.scale($secondary-color, $alpha: 0%) 100%);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Shrikhand', cursive;
+
+/* Border radius */
+$border-radius-sm: .3125rem;
+$border-radius-md: .625rem;
+$border-radius-lg: .9375rem;
+$border-radius-xl: 1.25rem;
+$border-radius-xxl: 1.875rem;
+
+/* Box shadow */
+$box-shadow-sm: 0 .1875rem .1875rem rgba(0, 0, 0, .1);
+$box-shadow-lg: 0 .3125rem .3125rem rgba(0, 0, 0, .1);
+$box-shadow-xl: 0 .625rem .625rem rgba(0, 0, 0, .1);
+$box-shadow-xxl: 0 1.25rem 1.25rem rgba(0, 0, 0, .1);

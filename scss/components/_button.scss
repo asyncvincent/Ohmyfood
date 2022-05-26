@@ -1,0 +1,19 @@
+@mixin button($widthSize: auto, $padding: 1.25rem, $color: $gradient-color, $textColor: $white-color, $fontSize: 1em, $fontWeight: 600, $borderRadius: $border-radius-xxl) {
+    width: $widthSize;
+    padding: $padding;
+    background: $color;
+    border-radius: $borderRadius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $textColor;
+    box-shadow: $box-shadow-lg;
+    transition: all .3s ease;
+
+    &:hover {
+        box-shadow: $box-shadow-xl;
+        background: $gradient-color-hover;
+    }
+}
