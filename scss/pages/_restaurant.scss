@@ -17,6 +17,7 @@
     border-top-left-radius: 1.875rem;
     border-top-right-radius: 1.875rem;
     width: 100%;
+    max-width: 75rem;
     min-height: 100vh;
     margin-top: 70%;
     background-color: $white-color-alt;
@@ -79,6 +80,7 @@
     }
 
     .menu__content__items {
+        list-style: none;
         margin-top: .8125rem;
         gap: .9375rem;
         @include flexbox(column, center, center);
@@ -188,5 +190,24 @@
     .menu__order__button {
         @include button(auto, .9375rem 3.125rem, $gradient-color, $white-color, 1em, 400, $border-radius-xxl);
         margin: 3.125rem auto;
+    }
+
+    @media screen and (min-width: 987px) {
+        margin: 18.75rem auto 0;
+        @include flexbox(row, center, flex-start);
+
+        .menu__content__top {
+            @include flexbox(column, center, center);
+        }
+
+        .menu__content__items {
+            flex-flow: row wrap;
+            @include flexbox(row, space-between, center);
+
+            &__card {
+                width: 32%;
+                height: 6.25rem;
+            }
+        }
     }
 }
