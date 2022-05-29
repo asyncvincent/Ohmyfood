@@ -33,14 +33,13 @@
 .discovery {
     width: 100%;
     background-color: $white-color-alt;
-    padding-bottom: 3.4375rem;
     @include flexbox(row, center, center);
 
     &__content {
         width: 100%;
         max-width: 40rem;
         text-align: center;
-        padding: 2.5rem 0;
+        padding: 2.5rem 0 3.4375rem 0;
         @include flexbox(column, center, center);
 
         &__title {
@@ -95,6 +94,10 @@
             border-radius: $border-radius-xl;
             box-shadow: $box-shadow-xl;
             transition: all .3s;
+            
+            @media screen and (max-width: 767px) {
+                margin-left: .625rem;
+            }
 
             &__number {
                 position: absolute;
