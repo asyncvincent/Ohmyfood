@@ -192,7 +192,7 @@
         margin: 3.125rem auto;
     }
 
-    @media screen and (min-width: 987px) {
+    @media screen and (min-width: 816px) {
         margin: 18.75rem auto 0;
         @include flexbox(row, center, flex-start);
 
