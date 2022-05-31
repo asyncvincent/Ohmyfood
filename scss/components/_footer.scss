@@ -12,7 +12,7 @@ footer {
         padding: 1.875rem;
         @include flexbox(column, center, flex-start);
 
-        @media screen and (min-width: 987px) {
+        @media screen and (min-width: 816px) {
             align-items: center;
 
             ul {
