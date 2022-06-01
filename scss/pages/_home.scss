@@ -136,6 +136,9 @@
 /* Restaurants Cards */
 
 .restaurants {
+    border-top: 3.125rem solid transparent;
+    margin: -3.125rem 0 0;
+    background-clip: padding-box;
     width: 100%;
     padding: 3.125rem 1.25rem 4.375rem;
     background-color: $white-color-alt;
